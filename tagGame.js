@@ -7,7 +7,7 @@ function swap(arr,i1,j1,i2,j2){
 window.onload = function() {
     box = document.getElementById("box");
     newGame();
-}
+};
 function cellClick(event) {
     var event = window.event,
         el = event.target,
@@ -30,7 +30,7 @@ function cellClick(event) {
 }
 function newGame(){
     for(i = 0; i < 4; ++i){
-        arr[i] = []
+        arr[i] = [];
         for(j = 0; j < 4; ++j){
             if(i + j != 6)
                 arr[i][j] = i*4 + j + 1;
@@ -51,8 +51,8 @@ function newGame(){
             case 3:
                 if(ej != 0) swap(arr,ei,ej,ei,--ej); // лево
         }
-    var table = document.createElement("table"),
-        tbody = document.createElement("tbody");
+    var table = document.createElement("table");
+     var tbody = document.createElement("tbody");
     table.appendChild(tbody);
     for(i = 0; i < 4; ++i){
         var row = document.createElement("tr");
